@@ -9,6 +9,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 ::selection {
@@ -20,6 +21,7 @@ body {
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
+  overflow: hidden;
 }
 
 /* LAYOUT */
@@ -73,17 +75,24 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
 .between {
   font-size: 1.4rem;
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .guess {
@@ -120,4 +129,8 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+.hidden {
+  display: none;
 }
