@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -21,7 +21,7 @@ body {
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* LAYOUT */
