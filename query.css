@@ -32,12 +32,16 @@
     padding: 0 2rem 0 2rem;
   }
 
+  .hiddeninf {
+    display: none;
+  }
+
   .hidden {
     display: block;
   }
 
-  .hiddeninf {
-    display: none;
+  .number {
+    padding: 1.2rem;
   }
 }
 
