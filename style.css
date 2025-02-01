@@ -135,3 +135,12 @@ h1 {
 .hidden {
   display: none;
 }
+
+.non-play {
+  height: 50vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+}

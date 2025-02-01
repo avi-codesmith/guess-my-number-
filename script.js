@@ -4,6 +4,7 @@ let number = Math.trunc(Math.random() * 10 + 1);
 
 let score = 10;
 let highscore = 0;
+const body = document.querySelector(".body");
 
 document.querySelector(".number").textContent = "?";
 
@@ -30,6 +31,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".number").style.color = "#60b347";
     document.querySelector(".number").textContent = number;
     document.querySelector(".number").style.width = "30rem";
+    body.classList.add("non-play");
 
     if (score > highscore) {
       highscore = score;
@@ -142,4 +144,5 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").style.color = "#222";
   document.querySelector(".message").textContent = "Start guessing...";
   document.querySelector(".guess").value = "";
+  body.classList.remove("non-play");
 });
