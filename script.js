@@ -66,7 +66,6 @@ document.querySelector(".check").addEventListener("click", function () {
 
 document.addEventListener("keydown", function (event) {
   const guess = document.querySelector(".guess").value;
-  console.log(typeof guess, guess);
 
   if (event.key === "Enter") {
     if (!guess) {
@@ -143,6 +142,10 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".number").style.color = "#222";
   document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".message").style.color = "#eee";
+  document.querySelector(".check").textContent = "Check!";
+  document.querySelector(".check").style.backgroundColor = "#eee";
+  document.querySelector(".check").style.color = "#222";
   document.querySelector(".guess").value = "";
   body.classList.remove("non-play");
 });
